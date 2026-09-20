@@ -2,6 +2,13 @@
 
 > **Helping Indian students discover scholarships they already qualify for in under two minutes.**
 
+[![Live Web App](https://img.shields.io/badge/Live%20App-hack1--day--project.vercel.app-2563EB?style=for-the-badge&logo=vercel)](https://hack1-day-project.vercel.app)
+[![Live Backend API](https://img.shields.io/badge/API-hack1day--project.onrender.com-7C3AED?style=for-the-badge&logo=render)](https://hack1day-project.onrender.com/api/health)
+
+- 🌐 **Live Web Application**: [https://hack1-day-project.vercel.app](https://hack1-day-project.vercel.app)
+- ⚙️ **Production API (Render)**: [https://hack1day-project.onrender.com](https://hack1day-project.onrender.com)
+- 📦 **API Health Status**: [https://hack1day-project.onrender.com/api/health](https://hack1day-project.onrender.com/api/health)
+
 ---
 
 ## 📌 Problem Statement
