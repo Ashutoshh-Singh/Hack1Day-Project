@@ -2,10 +2,11 @@
   "name": "right2know-root",
   "version": "1.0.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "postinstall": "cd server && npm install",
-    "start": "cd server && npm start",
-    "build": "cd client && npm install && npm run build"
+    "build": "cd server && npm install",
+    "start": "node server/server.js"
   },
   "dependencies": {
     "cors": "^2.8.5",
