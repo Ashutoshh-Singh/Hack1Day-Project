@@ -1,0 +1,752 @@
+[
+  {
+    "name": "PM Vidyalaxmi Higher Education Fellowship 2026",
+    "provider": "Ministry of Education & Financial Services (Govt. of India)",
+    "description": "Newly announced national flagship financial aid scheme providing collateral-free tuition assistance and full maintenance allowance for top higher educational institutions.",
+    "benefit": "100% Tuition Fees + ₹40,000 Annual Stipend",
+    "benefitAmount": 140000,
+    "deadline": "2026-11-30",
+    "applyLink": "https://scholarships.gov.in",
+    "eligibleCourses": [
+      "ALL"
+    ],
+    "eligibleYears": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "eligibleStates": [
+      "ALL"
+    ],
+    "eligibleCategories": [
+      "ALL"
+    ],
+    "maxIncomeLakhs": 8,
+    "minCgpa": 6.5,
+    "disabilityOnly": false,
+    "eligibleGenders": [
+      "ALL"
+    ],
+    "institutionTypes": [
+      "ALL"
+    ],
+    "documents": [
+      "Aadhaar Card",
+      "Admission Verification Letter",
+      "Income Certificate / ITR",
+      "Bank Account Seeded with Aadhaar"
+    ],
+    "tags": [
+      "New Launch",
+      "Central Flagship",
+      "Top Institutes"
+    ],
+    "id": "scheme-014",
+    "isOfficial": true,
+    "isNew": true,
+    "createdAt": "2026-09-20T07:03:53.909Z"
+  },
+  {
+    "name": "Tata STEM Innovation & AI Research Grant 160",
+    "provider": "Tata Innovation Philanthropies",
+    "description": "Newly launched grant for engineering and science students pursuing Artificial Intelligence, Machine Learning, and Green Tech degrees.",
+    "benefit": "₹1,00,000 One-time Research & Tuition Grant",
+    "benefitAmount": 100000,
+    "deadline": "2026-12-15",
+    "applyLink": "https://www.tatatrusts.org",
+    "eligibleCourses": [
+      "B.Tech",
+      "CSE",
+      "IT",
+      "ECE",
+      "Mechanical",
+      "Electrical"
+    ],
+    "eligibleYears": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "eligibleStates": [
+      "ALL"
+    ],
+    "eligibleCategories": [
+      "ALL"
+    ],
+    "maxIncomeLakhs": 10,
+    "minCgpa": 7,
+    "disabilityOnly": false,
+    "eligibleGenders": [
+      "ALL"
+    ],
+    "institutionTypes": [
+      "ALL"
+    ],
+    "documents": [
+      "College ID & Bonafide Letter",
+      "Latest Semester Marksheet",
+      "Statement of Purpose (Tech Project)",
+      "Aadhaar Card"
+    ],
+    "tags": [
+      "New Launch",
+      "AI & STEM",
+      "Private CSR"
+    ],
+    "id": "scheme-013",
+    "isOfficial": true,
+    "isNew": true,
+    "createdAt": "2026-09-20T07:02:44.556Z"
+  },
+  {
+    "id": "scheme-001",
+    "name": "Central Sector Scheme of Scholarship for College and University Students",
+    "provider": "Department of Higher Education, Ministry of Education (Govt. of India)",
+    "description": "Financial assistance to meritorious students from low-income families to meet day-to-day expenses while pursuing higher studies in colleges and universities.",
+    "benefit": "₹20,000 per annum (₹12,000 for 1st-3rd year, ₹20,000 for PG)",
+    "benefitAmount": 20000,
+    "deadline": "2026-10-31",
+    "applyLink": "https://scholarships.gov.in",
+    "eligibleCourses": [
+      "ALL"
+    ],
+    "eligibleYears": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "eligibleStates": [
+      "ALL"
+    ],
+    "eligibleCategories": [
+      "ALL"
+    ],
+    "maxIncomeLakhs": 4.5,
+    "minCgpa": 6.5,
+    "disabilityOnly": false,
+    "eligibleGenders": [
+      "ALL"
+    ],
+    "institutionTypes": [
+      "ALL"
+    ],
+    "documents": [
+      "Aadhaar Card",
+      "Class 12th Marksheet / Previous Year Grade Card",
+      "Family Income Certificate issued by competent revenue authority",
+      "Active Student Bank Account Passbook",
+      "College Admission Bonafide Certificate"
+    ],
+    "tags": [
+      "Merit-cum-Means",
+      "Central Government",
+      "NSP Portal"
+    ],
+    "isOfficial": true,
+    "isNew": true,
+    "createdAt": "2026-09-01T00:00:00.000Z"
+  },
+  {
+    "id": "scheme-002",
+    "name": "AICTE Pragati Scholarship for Girl Students",
+    "provider": "All India Council for Technical Education (AICTE)",
+    "description": "Scholarship to empower young women pursuing technical education (degree or diploma) in AICTE-approved institutions across India.",
+    "benefit": "₹50,000 per annum for tuition & contingency",
+    "benefitAmount": 50000,
+    "deadline": "2026-10-15",
+    "applyLink": "https://scholarships.gov.in",
+    "eligibleCourses": [
+      "B.Tech",
+      "CSE",
+      "ECE",
+      "Mechanical",
+      "Civil",
+      "IT",
+      "Electrical",
+      "Engineering"
+    ],
+    "eligibleYears": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "eligibleStates": [
+      "ALL"
+    ],
+    "eligibleCategories": [
+      "ALL"
+    ],
+    "maxIncomeLakhs": 8,
+    "minCgpa": 6,
+    "disabilityOnly": false,
+    "eligibleGenders": [
+      "Female"
+    ],
+    "institutionTypes": [
+      "Government",
+      "Private",
+      "Aided",
+      "Autonomous"
+    ],
+    "documents": [
+      "Class 10th & 12th Marksheet",
+      "Annual Family Income Certificate (under ₹8 Lakhs)",
+      "Admission Letter to AICTE-approved technical institution",
+      "Tuition Fee Receipt",
+      "Aadhaar Card copy linked with bank account"
+    ],
+    "tags": [
+      "Women in STEM",
+      "Technical Education",
+      "AICTE"
+    ],
+    "isOfficial": true,
+    "isNew": true,
+    "createdAt": "2026-09-01T00:00:00.000Z"
+  },
+  {
+    "id": "scheme-003",
+    "name": "AICTE Saksham Scholarship Scheme for Specially Abled Students",
+    "provider": "All India Council for Technical Education (AICTE)",
+    "description": "Targeted financial aid to encourage specially abled students (disability >= 40%) to pursue professional and technical education without economic barriers.",
+    "benefit": "₹50,000 per annum plus incidental support",
+    "benefitAmount": 50000,
+    "deadline": "2026-11-15",
+    "applyLink": "https://scholarships.gov.in",
+    "eligibleCourses": [
+      "B.Tech",
+      "CSE",
+      "ECE",
+      "Mechanical",
+      "Civil",
+      "IT",
+      "Electrical",
+      "Engineering",
+      "MCA",
+      "MBA"
+    ],
+    "eligibleYears": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "eligibleStates": [
+      "ALL"
+    ],
+    "eligibleCategories": [
+      "ALL"
+    ],
+    "maxIncomeLakhs": 8,
+    "minCgpa": 5.5,
+    "disabilityOnly": true,
+    "eligibleGenders": [
+      "ALL"
+    ],
+    "institutionTypes": [
+      "ALL"
+    ],
+    "documents": [
+      "Unique Disability ID (UDID) Card / Medical Disability Certificate (40%+)",
+      "Valid Family Income Certificate",
+      "Academic Marksheet of qualifying examination",
+      "Bonafide Student Certificate from Institution",
+      "Bank Account Details (Aadhaar Seeded)"
+    ],
+    "tags": [
+      "Disability Support",
+      "Inclusive STEM",
+      "AICTE"
+    ],
+    "isOfficial": true,
+    "isNew": true,
+    "createdAt": "2026-09-01T00:00:00.000Z"
+  },
+  {
+    "id": "scheme-004",
+    "name": "Uttar Pradesh Post-Matric Scholarship & Fee Reimbursement",
+    "provider": "Social Welfare Department, Government of Uttar Pradesh",
+    "description": "Comprehensive scholarship and tuition fee reimbursement scheme for domicile students studying in degree, diploma, and postgraduate courses in UP.",
+    "benefit": "100% Tuition Fee Reimbursement + ₹12,000 Annual Maintenance Allowance",
+    "benefitAmount": 65000,
+    "deadline": "2026-09-28",
+    "applyLink": "https://scholarship.up.gov.in",
+    "eligibleCourses": [
+      "ALL"
+    ],
+    "eligibleYears": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "eligibleStates": [
+      "Uttar Pradesh"
+    ],
+    "eligibleCategories": [
+      "General",
+      "OBC",
+      "SC",
+      "ST",
+      "EWS"
+    ],
+    "maxIncomeLakhs": 2.5,
+    "minCgpa": 5,
+    "disabilityOnly": false,
+    "eligibleGenders": [
+      "ALL"
+    ],
+    "institutionTypes": [
+      "ALL"
+    ],
+    "documents": [
+      "UP Domicile Certificate (Niwas Praman Patra)",
+      "Income Certificate verified on UP e-District portal",
+      "Caste Certificate (for reserved categories)",
+      "Fee Receipt & Non-Refundable Fee Breakdown",
+      "Aadhaar Number verified with DigiLocker"
+    ],
+    "tags": [
+      "State Domicile",
+      "Fee Reimbursement",
+      "UP Government"
+    ],
+    "isOfficial": true,
+    "isNew": true,
+    "createdAt": "2026-09-01T00:00:00.000Z"
+  },
+  {
+    "id": "scheme-005",
+    "name": "Reliance Foundation Undergraduate Scholarship",
+    "provider": "Reliance Foundation",
+    "description": "One of India's largest private merit-cum-means scholarship initiatives supporting high-achieving undergraduate students across all disciplines.",
+    "benefit": "Up to ₹2,00,000 over the duration of the degree",
+    "benefitAmount": 200000,
+    "deadline": "2026-10-06",
+    "applyLink": "https://www.scholarships.reliancefoundation.org",
+    "eligibleCourses": [
+      "ALL"
+    ],
+    "eligibleYears": [
+      1,
+      2
+    ],
+    "eligibleStates": [
+      "ALL"
+    ],
+    "eligibleCategories": [
+      "ALL"
+    ],
+    "maxIncomeLakhs": 15,
+    "minCgpa": 7,
+    "disabilityOnly": false,
+    "eligibleGenders": [
+      "ALL"
+    ],
+    "institutionTypes": [
+      "ALL"
+    ],
+    "documents": [
+      "Standard 12th Board Examination Marksheet (Minimum 60%)",
+      "Official Income Certificate / Form 16 / ITR of parents",
+      "College Bonafide Student Letter",
+      "Proof of Identity & Address",
+      "Statement of Purpose (Online Aptitude Test clearance)"
+    ],
+    "tags": [
+      "Private Foundation",
+      "High Benefit",
+      "Merit-cum-Means"
+    ],
+    "isOfficial": true,
+    "isNew": true,
+    "createdAt": "2026-09-01T00:00:00.000Z"
+  },
+  {
+    "id": "scheme-006",
+    "name": "ONGC Merit Scholarship for SC/ST and OBC Students",
+    "provider": "Oil and Natural Gas Corporation (ONGC Foundation)",
+    "description": "Dedicated corporate CSR initiative providing annual scholarships to economically challenged SC, ST, and OBC students in engineering, MBBS, and MBA programmes.",
+    "benefit": "₹48,000 per annum (₹4,000/month)",
+    "benefitAmount": 48000,
+    "deadline": "2026-11-30",
+    "applyLink": "https://ongcscholar.org",
+    "eligibleCourses": [
+      "B.Tech",
+      "CSE",
+      "ECE",
+      "Mechanical",
+      "Civil",
+      "IT",
+      "Electrical",
+      "Engineering",
+      "MBBS",
+      "MBA"
+    ],
+    "eligibleYears": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "eligibleStates": [
+      "ALL"
+    ],
+    "eligibleCategories": [
+      "SC",
+      "ST",
+      "OBC"
+    ],
+    "maxIncomeLakhs": 2,
+    "minCgpa": 6,
+    "disabilityOnly": false,
+    "eligibleGenders": [
+      "ALL"
+    ],
+    "institutionTypes": [
+      "ALL"
+    ],
+    "documents": [
+      "Caste Certificate issued by Revenue Authority",
+      "Annual Family Income Certificate",
+      "Class 12th Marksheet & Current Year Grade Sheets",
+      "Proof of College Enrolment",
+      "Bank Account Details with PAN/Aadhaar linked"
+    ],
+    "tags": [
+      "CSR / PSU",
+      "Engineering & Medicine",
+      "Social Welfare"
+    ],
+    "isOfficial": true,
+    "isNew": true,
+    "createdAt": "2026-09-01T00:00:00.000Z"
+  },
+  {
+    "id": "scheme-007",
+    "name": "Kotak Kanya Scholarship",
+    "provider": "Kotak Education Foundation",
+    "description": "Financial assistance to meritorious girl students from underprivileged backgrounds who have secured admission to premier professional graduation courses.",
+    "benefit": "₹1,50,000 per year until completion of professional degree",
+    "benefitAmount": 150000,
+    "deadline": "2026-09-30",
+    "applyLink": "https://kotak.buddy4study.com",
+    "eligibleCourses": [
+      "B.Tech",
+      "CSE",
+      "ECE",
+      "Mechanical",
+      "Civil",
+      "IT",
+      "Electrical",
+      "Engineering",
+      "MBBS",
+      "B.Arch",
+      "Integrated Law"
+    ],
+    "eligibleYears": [
+      1
+    ],
+    "eligibleStates": [
+      "ALL"
+    ],
+    "eligibleCategories": [
+      "ALL"
+    ],
+    "maxIncomeLakhs": 6,
+    "minCgpa": 7.5,
+    "disabilityOnly": false,
+    "eligibleGenders": [
+      "Female"
+    ],
+    "institutionTypes": [
+      "ALL"
+    ],
+    "documents": [
+      "Class 12th Board Marksheet (minimum 75% marks)",
+      "Income Proof (ITR / Salary Slip / Income Certificate)",
+      "College Admission Letter with Fee Structure",
+      "Aadhaar Card of applicant and parent",
+      "Passport size photograph"
+    ],
+    "tags": [
+      "Women in Professional Studies",
+      "High Value",
+      "Private CSR"
+    ],
+    "isOfficial": true,
+    "isNew": true,
+    "createdAt": "2026-09-01T00:00:00.000Z"
+  },
+  {
+    "id": "scheme-008",
+    "name": "HDFC Bank Parivartan's ECSS Programme",
+    "provider": "HDFC Bank Foundation",
+    "description": "Need-based educational crisis support scholarship for school and college students facing financial hardship or emergencies to prevent school dropouts.",
+    "benefit": "Up to ₹75,000 for undergraduate general and professional courses",
+    "benefitAmount": 75000,
+    "deadline": "2026-10-20",
+    "applyLink": "https://www.hdfcbank.com/personal/about-us/corporate-social-responsibility/educational-crisis-support-scholarship",
+    "eligibleCourses": [
+      "ALL"
+    ],
+    "eligibleYears": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "eligibleStates": [
+      "ALL"
+    ],
+    "eligibleCategories": [
+      "ALL"
+    ],
+    "maxIncomeLakhs": 2.5,
+    "minCgpa": 5.5,
+    "disabilityOnly": false,
+    "eligibleGenders": [
+      "ALL"
+    ],
+    "institutionTypes": [
+      "ALL"
+    ],
+    "documents": [
+      "Previous Year Marksheet (minimum 55% aggregate)",
+      "Income Certificate / BPL Card / Ration Card",
+      "Current Year Admission Proof & Fee Receipt",
+      "Crisis Documentation (if applicable - medical / loss of breadwinner)",
+      "Identity Proof (Aadhaar / Voter ID)"
+    ],
+    "tags": [
+      "Need-Based",
+      "Crisis Support",
+      "CSR"
+    ],
+    "isOfficial": true,
+    "isNew": true,
+    "createdAt": "2026-09-01T00:00:00.000Z"
+  },
+  {
+    "id": "scheme-009",
+    "name": "Sitaram Jindal Foundation Scholarship",
+    "provider": "Sitaram Jindal Foundation",
+    "description": "Philanthropic scholarship for meritorious and economically disadvantaged students pursuing diploma, graduate, and postgraduate degrees.",
+    "benefit": "₹24,000 - ₹38,400 per year depending on course level and hostel stay",
+    "benefitAmount": 30000,
+    "deadline": "2026-12-31",
+    "applyLink": "https://www.sitaramjindalfoundation.org/scholarships.php",
+    "eligibleCourses": [
+      "ALL"
+    ],
+    "eligibleYears": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "eligibleStates": [
+      "ALL"
+    ],
+    "eligibleCategories": [
+      "ALL"
+    ],
+    "maxIncomeLakhs": 4,
+    "minCgpa": 6.5,
+    "disabilityOnly": false,
+    "eligibleGenders": [
+      "ALL"
+    ],
+    "institutionTypes": [
+      "Government",
+      "Private",
+      "Aided"
+    ],
+    "documents": [
+      "Marksheet of the last qualifying exam",
+      "Income Certificate issued by authorized revenue officer (Tahsildar/SDM)",
+      "Hostel Warden Certificate (for hostellers)",
+      "Physically Handicapped Certificate (if applicable)",
+      "Recommendation letter from College Principal"
+    ],
+    "tags": [
+      "Merit-cum-Means",
+      "Philanthropic",
+      "All Courses"
+    ],
+    "isOfficial": true,
+    "isNew": true,
+    "createdAt": "2026-09-01T00:00:00.000Z"
+  },
+  {
+    "id": "scheme-010",
+    "name": "National Fellowship and Scholarship for Higher Education of ST Students",
+    "provider": "Ministry of Tribal Affairs (Govt. of India)",
+    "description": "Financial support to ST students who have secured admission in notified top institutes of higher learning across India (IITs, NITs, IIMs, Central Universities).",
+    "benefit": "Full Tuition Fee + Living Expenses ₹3,000/month + Books & Stationary ₹5,000/year",
+    "benefitAmount": 120000,
+    "deadline": "2026-10-31",
+    "applyLink": "https://scholarships.gov.in",
+    "eligibleCourses": [
+      "ALL"
+    ],
+    "eligibleYears": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "eligibleStates": [
+      "ALL"
+    ],
+    "eligibleCategories": [
+      "ST"
+    ],
+    "maxIncomeLakhs": 6,
+    "minCgpa": 5,
+    "disabilityOnly": false,
+    "eligibleGenders": [
+      "ALL"
+    ],
+    "institutionTypes": [
+      "Government",
+      "Autonomous",
+      "Aided"
+    ],
+    "documents": [
+      "Scheduled Tribe (ST) Caste Certificate",
+      "Annual Family Income Certificate",
+      "Admission verification by Head of Institution",
+      "Aadhaar Card",
+      "Bank Account Details linked to Aadhaar"
+    ],
+    "tags": [
+      "Central Government",
+      "ST Welfare",
+      "Top Institutes"
+    ],
+    "isOfficial": true,
+    "isNew": true,
+    "createdAt": "2026-09-01T00:00:00.000Z"
+  },
+  {
+    "id": "scheme-011",
+    "name": "Tata Trusts Medical and Healthcare Higher Education Grants",
+    "provider": "Tata Trusts Philanthropy",
+    "description": "Means-cum-merit educational grants for students pursuing undergraduate and postgraduate studies in Medical Sciences, Healthcare, and Nursing in India.",
+    "benefit": "Covers 30% to 80% of annual college tuition fees",
+    "benefitAmount": 80000,
+    "deadline": "2026-11-20",
+    "applyLink": "https://www.tatatrusts.org/our-work/individual-grants-programme/education-grants",
+    "eligibleCourses": [
+      "MBBS",
+      "BDS",
+      "B.Sc Nursing",
+      "B.Pharm",
+      "Medical"
+    ],
+    "eligibleYears": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "eligibleStates": [
+      "ALL"
+    ],
+    "eligibleCategories": [
+      "ALL"
+    ],
+    "maxIncomeLakhs": 5,
+    "minCgpa": 6,
+    "disabilityOnly": false,
+    "eligibleGenders": [
+      "ALL"
+    ],
+    "institutionTypes": [
+      "ALL"
+    ],
+    "documents": [
+      "Previous Academic Years Marksheets",
+      "Current Academic Year College Fee Receipt",
+      "Family Income Proof / Salary Certificate / ITR",
+      "Original Statement of Purpose",
+      "Cancelled Cheque / Bank Passbook Copy"
+    ],
+    "tags": [
+      "Medical & Healthcare",
+      "Tata Trusts",
+      "Philanthropic"
+    ],
+    "isOfficial": true,
+    "isNew": true,
+    "createdAt": "2026-09-01T00:00:00.000Z"
+  },
+  {
+    "id": "scheme-012",
+    "name": "AICTE Swanath Scholarship Scheme",
+    "provider": "All India Council for Technical Education (AICTE)",
+    "description": "Financial support to orphans, wards of parents who died in COVID-19, and wards of Armed Forces / Central Paramilitary Forces martyred in action.",
+    "benefit": "₹50,000 per annum for degree and diploma students",
+    "benefitAmount": 50000,
+    "deadline": "2026-10-31",
+    "applyLink": "https://scholarships.gov.in",
+    "eligibleCourses": [
+      "B.Tech",
+      "CSE",
+      "ECE",
+      "Mechanical",
+      "Civil",
+      "IT",
+      "Electrical",
+      "Engineering",
+      "Management"
+    ],
+    "eligibleYears": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "eligibleStates": [
+      "ALL"
+    ],
+    "eligibleCategories": [
+      "ALL"
+    ],
+    "maxIncomeLakhs": 8,
+    "minCgpa": 5,
+    "disabilityOnly": false,
+    "eligibleGenders": [
+      "ALL"
+    ],
+    "institutionTypes": [
+      "ALL"
+    ],
+    "documents": [
+      "Death Certificate of both parents (for Orphans) or Martyr Certificate (for Armed Forces)",
+      "Annual Income Certificate (not exceeding ₹8 Lakhs)",
+      "Admission letter to technical institute",
+      "Bonafide certificate issued by Registrar/Principal",
+      "Bank Account details seeded with Aadhaar"
+    ],
+    "tags": [
+      "Special Categories",
+      "AICTE",
+      "Social Security"
+    ],
+    "isOfficial": true,
+    "isNew": true,
+    "createdAt": "2026-09-01T00:00:00.000Z"
+  }
+]

@@ -1,0 +1,26 @@
+{
+  "name": "right2know-server",
+  "version": "1.0.0",
+  "description": "Right2Know Backend - Deterministic Scholarship Matching API",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "test": "node tests/matcher.test.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-rate-limit": "^7.5.0",
+    "helmet": "^8.0.0"
+  },
+  "keywords": [
+    "scholarship",
+    "eligibility",
+    "civic-tech"
+  ],
+  "author": "Right2Know Team",
+  "license": "MIT"
+}

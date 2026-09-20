@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background: radial-gradient(circle at 10% 20%, #EEF2F7 0%, #E2E8F0 50%, #DCE5EE 100%);
+    color: #1E293B;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    -webkit-tap-highlight-color: transparent;
+    overflow-x: hidden;
+    min-height: 100vh;
+  }
+
+  /* Accessible focus indicators */
+  *:focus-visible {
+    @apply outline-none ring-2 ring-blue-500 ring-offset-2 ring-offset-slate-100;
+  }
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Sleek minimal scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}
+
+/* Soft Neomorphic & Frosted Glass 3.0 Styles */
+.soft-glass-card {
+  background: rgba(255, 255, 255, 0.78);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.85);
+  box-shadow: 0 12px 36px -8px rgba(15, 23, 42, 0.07), 0 4px 12px -2px rgba(15, 23, 42, 0.03);
+}
+
+.soft-glass-card:hover {
+  background: rgba(255, 255, 255, 0.92);
+  border-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 20px 48px -10px rgba(15, 23, 42, 0.12), 0 6px 16px -3px rgba(15, 23, 42, 0.05);
+  transform: translateY(-2px);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.soft-pill-btn {
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.soft-pill-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 20px -4px rgba(15, 23, 42, 0.12);
+}
+
+.soft-pill-btn:active {
+  transform: scale(0.98);
+}
+
+/* Tactile Pastel Palette Tiles */
+.tile-lavender {
+  background: linear-gradient(135deg, #F3E8FF 0%, #E9D5FF 100%);
+  border: 1px solid rgba(192, 132, 252, 0.3);
+}
+
+.tile-mint {
+  background: linear-gradient(135deg, #ECFDF5 0%, #D1FAE5 100%);
+  border: 1px solid rgba(110, 231, 183, 0.4);
+}
+
+.tile-sky {
+  background: linear-gradient(135deg, #F0F9FF 0%, #E0F2FE 100%);
+  border: 1px solid rgba(125, 211, 252, 0.4);
+}
+
+.tile-peach {
+  background: linear-gradient(135deg, #FFF7ED 0%, #FFEDD5 100%);
+  border: 1px solid rgba(253, 186, 116, 0.4);
+}
