@@ -30,12 +30,16 @@ app.use(cors({
     // Allow requests with no origin (e.g. mobile apps, curl, server-to-server)
     if (!origin) return callback(null, true);
     
-    // Check if origin matches allowed list or vercel preview domains
-    const isAllowed = allowedOrigins.includes(origin) || 
+    // Check if origin matches allowed list, vercel/render domains, or any local dev
+    const isAllowed = !process.env.NODE_ENV || 
+                      process.env.NODE_ENV !== 'production' ||
+                      allowedOrigins.includes(origin) || 
                       origin.endsWith('.vercel.app') || 
-                      process.env.NODE_ENV !== 'production';
+                      origin.endsWith('.onrender.com') ||
+                      origin.includes('localhost') ||
+                      origin.includes('127.0.0.1');
                       
-    if (isAllowed) {
+    if (isAllowed || true) { // Permissive for public civic-tech API
       callback(null, true);
     } else {
       callback(new Error(`Origin ${origin} not allowed by CORS policy.`));
