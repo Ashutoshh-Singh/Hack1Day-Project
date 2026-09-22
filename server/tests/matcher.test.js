@@ -199,6 +199,38 @@ test('Validates and sanitizes standard profile successfully', () => {
   assert.strictEqual(result.data.cgpa, 8.2);
 });
 
+// ----------------------------------------------------
+// 4. DATA STORE & ID GENERATION TESTS
+// ----------------------------------------------------
+console.log('\n💾 Testing Data Store & ID Generation (dataStore.js)...');
+
+test('getNextSchemeId generates collision-free monotonic ID from existing list', async () => {
+  const { getNextSchemeId } = await import('../utils/dataStore.js');
+  const sampleList = [
+    { id: 'scheme-001' },
+    { id: 'scheme-014' },
+    { id: 'scheme-008' }
+  ];
+  const nextId = getNextSchemeId(sampleList);
+  assert.strictEqual(nextId, 'scheme-015', `Expected scheme-015, got ${nextId}`);
+});
+
+test('getNextSchemeId handles empty list safely', async () => {
+  const { getNextSchemeId } = await import('../utils/dataStore.js');
+  const nextId = getNextSchemeId([]);
+  assert.strictEqual(nextId, 'scheme-001', `Expected scheme-001, got ${nextId}`);
+});
+
+test('getSchemes loads dataset with computed freshness properties', async () => {
+  const { getSchemes } = await import('../utils/dataStore.js');
+  const loaded = getSchemes();
+  assert.ok(Array.isArray(loaded) && loaded.length >= 10);
+  for (const s of loaded) {
+    assert.ok(typeof s.isNew === 'boolean');
+    assert.ok(typeof s.createdAt === 'string');
+  }
+});
+
 console.log(`\n========================================`);
 console.log(` Test Summary: ${passedTests}/${totalTests} Passed`);
 console.log(`========================================\n`);

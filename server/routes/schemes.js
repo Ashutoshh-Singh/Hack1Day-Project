@@ -1,55 +1,11 @@
 import { Router } from 'express';
-import fs from 'fs';
-import path from 'path';
-import { fileURLToPath } from 'url';
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+import { getSchemes, saveSchemes, getNextSchemeId } from '../utils/dataStore.js';
 
 const router = Router();
-const schemesPath = path.join(__dirname, '../data/schemes.json');
-
-// Helper to load schemes dataset with dynamic freshness tags
-function loadSchemes() {
-  try {
-    const rawData = fs.readFileSync(schemesPath, 'utf8');
-    const schemes = JSON.parse(rawData);
-    
-    // Dynamically mark schemes created in the last 60 days or with isNew=true
-    const now = new Date();
-    return schemes.map(s => {
-      let isNew = Boolean(s.isNew);
-      if (s.createdAt) {
-        const createdDate = new Date(s.createdAt);
-        const daysOld = (now - createdDate) / (1000 * 60 * 60 * 24);
-        if (daysOld <= 60) isNew = true;
-      }
-      return {
-        ...s,
-        isNew,
-        createdAt: s.createdAt || '2026-09-01T00:00:00.000Z'
-      };
-    });
-  } catch (err) {
-    console.error('Error reading schemes.json:', err);
-    return [];
-  }
-}
-
-// Helper to save schemes back to schemes.json
-function saveSchemes(schemes) {
-  try {
-    fs.writeFileSync(schemesPath, JSON.stringify(schemes, null, 2), 'utf8');
-    return true;
-  } catch (err) {
-    console.error('Error saving schemes.json:', err);
-    return false;
-  }
-}
 
 // GET /api/schemes
 router.get('/', (req, res) => {
-  const schemes = loadSchemes();
+  const schemes = getSchemes();
   const sorted = [...schemes].sort((a, b) => new Date(b.createdAt || 0) - new Date(a.createdAt || 0));
 
   res.status(200).json({
@@ -63,7 +19,7 @@ router.get('/', (req, res) => {
 
 // GET /api/schemes/updates (Lightweight polling endpoint for live ticker)
 router.get('/updates', (req, res) => {
-  const schemes = loadSchemes();
+  const schemes = getSchemes();
   const newSchemes = schemes.filter(s => s.isNew);
   
   res.status(200).json({
@@ -85,7 +41,7 @@ router.get('/:id', (req, res) => {
     });
   }
 
-  const schemes = loadSchemes();
+  const schemes = getSchemes();
   const scheme = schemes.find(s => String(s.id).toLowerCase() === id.trim().toLowerCase());
 
   if (!scheme) {
@@ -131,8 +87,8 @@ router.post('/', (req, res) => {
     });
   }
 
-  const schemes = loadSchemes();
-  const newId = `scheme-${String(schemes.length + 1).padStart(3, '0')}`;
+  const schemes = getSchemes();
+  const newId = getNextSchemeId(schemes);
 
   const newScheme = {
     id: newId,
@@ -165,7 +121,14 @@ router.post('/', (req, res) => {
   };
 
   schemes.unshift(newScheme); // Add to beginning of array
-  saveSchemes(schemes);
+  const isSaved = saveSchemes(schemes);
+
+  if (!isSaved) {
+    return res.status(500).json({
+      success: false,
+      error: 'Failed to persist new scholarship scheme to database.'
+    });
+  }
 
   res.status(201).json({
     success: true,
@@ -177,7 +140,7 @@ router.post('/', (req, res) => {
 
 // POST /api/schemes/seed-new (Instant simulation endpoint for testing dynamic new launch)
 router.post('/seed-new', (req, res) => {
-  const schemes = loadSchemes();
+  const schemes = getSchemes();
   const randomNum = Math.floor(100 + Math.random() * 900);
   const sampleNewSchemes = [
     {
@@ -233,7 +196,7 @@ router.post('/seed-new', (req, res) => {
   ];
 
   const chosen = sampleNewSchemes[Math.floor(Math.random() * sampleNewSchemes.length)];
-  const newId = `scheme-${String(schemes.length + 1).padStart(3, '0')}`;
+  const newId = getNextSchemeId(schemes);
 
   const created = {
     ...chosen,
@@ -244,7 +207,14 @@ router.post('/seed-new', (req, res) => {
   };
 
   schemes.unshift(created);
-  saveSchemes(schemes);
+  const isSaved = saveSchemes(schemes);
+
+  if (!isSaved) {
+    return res.status(500).json({
+      success: false,
+      error: 'Failed to persist simulated scheme to database.'
+    });
+  }
 
   res.status(201).json({
     success: true,

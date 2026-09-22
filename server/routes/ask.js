@@ -2,15 +2,9 @@ import { Router } from 'express';
 import rateLimit from 'express-rate-limit';
 import { validateQuestion } from '../utils/validators.js';
 import { generateScholarshipGuidance } from '../utils/aiClient.js';
-import fs from 'fs';
-import path from 'path';
-import { fileURLToPath } from 'url';
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+import { getSchemes } from '../utils/dataStore.js';
 
 const router = Router();
-const schemesPath = path.join(__dirname, '../data/schemes.json');
 
 // Rate limiting for AI assistant: 40 requests per 15 minutes per IP
 const askLimiter = rateLimit({
@@ -40,12 +34,7 @@ router.post('/', askLimiter, async (req, res, next) => {
     // If client didn't supply schemes array, load available dataset
     let activeSchemes = schemes;
     if (!Array.isArray(activeSchemes) || activeSchemes.length === 0) {
-      try {
-        const raw = fs.readFileSync(schemesPath, 'utf8');
-        activeSchemes = JSON.parse(raw);
-      } catch (e) {
-        activeSchemes = [];
-      }
+      activeSchemes = getSchemes();
     }
 
     const aiResult = await generateScholarshipGuidance({

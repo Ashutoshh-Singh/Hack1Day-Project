@@ -44,12 +44,17 @@ export function matchSchemes(profile, schemes) {
     const eligibleCourses = scheme.eligibleCourses || ['ALL'];
     const courseMatches =
       eligibleCourses.includes('ALL') ||
-      eligibleCourses.some(
-        c =>
-          c.toLowerCase() === userCourse.toLowerCase() ||
-          (userCourse.toLowerCase() === 'cse' && c.toLowerCase() === 'b.tech') ||
-          (userCourse.toLowerCase() === 'b.tech' && c.toLowerCase() === 'engineering')
-      );
+      eligibleCourses.some(c => {
+        const cLower = c.toLowerCase();
+        const uLower = userCourse.toLowerCase();
+        return (
+          cLower === uLower ||
+          (uLower === 'cse' && (cLower === 'b.tech' || cLower === 'engineering')) ||
+          (uLower === 'computer science' && (cLower === 'cse' || cLower === 'b.tech')) ||
+          (uLower === 'it' && (cLower === 'cse' || cLower === 'b.tech' || cLower === 'engineering')) ||
+          (uLower === 'b.tech' && (cLower === 'engineering' || cLower === 'cse'))
+        );
+      });
     if (!courseMatches) continue;
 
     // 2. Year Check
@@ -163,9 +168,12 @@ export function matchSchemes(profile, schemes) {
 
     // Construct friendly, specific eligibility reason
     const reasonParts = [];
-    if (numCgpa >= minCgpa) {
+    if (minCgpa > 0 && numCgpa >= minCgpa) {
       reasonParts.push(`your ${numCgpa} CGPA exceeds the ${minCgpa} requirement`);
+    } else if (numCgpa > 0 && minCgpa === 0) {
+      reasonParts.push(`your academic record (${numCgpa} CGPA) qualifies`);
     }
+
     if (numIncome <= maxIncome) {
       reasonParts.push(`family income (₹${numIncome}L) is within the ₹${maxIncome}L ceiling`);
     }
